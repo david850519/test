@@ -72,7 +72,7 @@ var dt = new Date();
             var Opening=[];
 
             for(var i=0;i<data.length;i++){
-                if(day!=data[i].WorkingExcp&&data[i].WorkingWeek[1]>=day>=data[i].WorkingWeek[0]){
+                if(day!=data[i].WorkingExcp&&data[i].WorkingWeek[1]>=day&&day>=data[i].WorkingWeek[0]){
                   switch(data[i].WorkingTime.length){
                     case 2:
                       if(data[i].WorkingTime[0]<=nowtime&&nowtime<=data[i].WorkingTime[1]){
